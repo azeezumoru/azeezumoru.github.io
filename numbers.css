@@ -1,0 +1,21 @@
+.container{
+    width:900px;
+    margin: auto;
+    background-color: peachpuff;
+}
+.main-body{
+    margin: 170px;
+    
+}#logo{
+    margin-left: 330px;
+    padding-top: 10px;
+}
+.coffee{
+    margin-left: 20px;
+}
+.copyright{
+    margin: 200px;
+    margin-top: unset;
+    padding-bottom: 40px; 
+    
+}

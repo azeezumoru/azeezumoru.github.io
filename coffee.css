@@ -1,0 +1,54 @@
+.container{
+    width:900px;
+    margin: auto;
+    background-color: tan;
+}
+.main-body{
+    margin: 170px;
+    
+}
+#logo{
+    margin-left: 330px;
+    padding-top: 10px;
+}
+.nav{
+    margin-right: auto;
+    margin-left: 20px;
+}
+.sidebar{
+    margin: 300px;
+    width: fit-content;
+    vertical-align: auto;
+    
+    
+}
+.copyright{
+    margin: 400px;
+    margin-top: unset;
+    padding-bottom: 40px; 
+    
+}
+.main-bottom{
+    display: block;
+    position: initial;
+}
+#french{
+    margin: auto;
+    
+}
+.columbian{
+    width: fit-content;
+}
+.house{
+    text-decoration: underline;
+}
+.french{
+    text-decoration: underline;
+}
+.columbian{
+    text-decoration: underline;
+}
+
+.main-text p{
+    margin: 5px 5px;
+}
