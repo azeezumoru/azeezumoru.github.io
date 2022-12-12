@@ -45,7 +45,9 @@
 
 ### Key Features 
 
-This project is my portfolio mobile view.
+This project is my portfolio project.
+
+For deployment https://azeezumoru.github.io/
 
 > Describe between 1-3 key features of the application.
 
