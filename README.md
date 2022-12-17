@@ -49,6 +49,8 @@ This project is my portfolio project.
 
 For deployment https://azeezumoru.github.io/
 
+This is the outline about my portfolio  https://www.loom.com/share/5736b17047f2424a8637255a05dde3f0
+
 > Describe between 1-3 key features of the application.
 
 - **[A webpage that displays 'Hello world']**
@@ -69,7 +71,7 @@ Clone this repository to your desired folder:
 
 ```sh
   cd my-folder
-  git clone https://github.com/azeezumoru/umoru-portfolio.git
+  git clone https://github.com/azeezumoru/azeezumoru.github.io.git
 ```
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

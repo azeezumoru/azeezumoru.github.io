@@ -109,7 +109,7 @@ a {
   margin: 0;
 }
 
-.social-icons {
+.social-icons { 
   display: flex;
   column-gap: 21px;
   justify-content: center;
