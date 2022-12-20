@@ -7,6 +7,35 @@ body {
   font-family: 'Inter', sans-serif;
 }
 
+@keyframes reappear {
+  from{
+    visibility: hidden;
+    opacity: 0;
+  }
+  1%{
+    visibility: visible;
+    opacity: 0;
+  }
+  to{
+    visibility: visible;
+    opacity: 1;
+  }
+}
+@keyframes disappear {
+  from{
+    visibility: visible;
+    opacity: 1;
+  }
+  99%{
+    visibility: visible;
+    opacity: 0;
+  }
+  to{
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+
 a {
   color: black;
   text-decoration: none;
@@ -39,6 +68,24 @@ a {
   justify-content: space-between;
 }
 
+.mobile-menu-container {
+  display: block;
+  list-style: none;
+  background-color: #ff000086;
+  text-align: right;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 100vh;
+  visibility: hidden;
+}
+
+#mobile-nav {
+  display: block;
+  text-align: left;
+}
+
 .desktop-menu li {
   display: none;
 }
@@ -54,6 +101,13 @@ a {
   padding: 15px 45px 15px 45px;
   display: flex;
   gap: 20px;
+}
+
+.navigation .open {
+  animation: reappear 100ms ease-in-out 0ms 1 forwards;
+}
+.navigation .close {
+  animation: disappear 100ms ease-in-out 0ms 1 forwards;
 }
 
 .menu-btn {
