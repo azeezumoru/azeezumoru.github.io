@@ -1,44 +1,78 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/* stylelint-disable no-descending-specificity */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 html,
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Inter', sans-serif;
-}
-
-@keyframes reappear {
-  from{
-    visibility: hidden;
-    opacity: 0;
-  }
-  1%{
-    visibility: visible;
-    opacity: 0;
-  }
-  to{
-    visibility: visible;
-    opacity: 1;
-  }
-}
-@keyframes disappear {
-  from{
-    visibility: visible;
-    opacity: 1;
-  }
-  99%{
-    visibility: visible;
-    opacity: 0;
-  }
-  to{
-    visibility: hidden;
-    opacity: 0;
-  }
+  font-family: "Inter", sans-serif;
 }
 
 a {
   color: black;
   text-decoration: none;
+}
+
+.mobile-container {
+  max-width: 100%;
+  margin: auto;
+  color: white;
+  height: 600px;
+}
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 10%;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 25px;
+  text-decoration: none;
+  font-size: 36px;
+  font-weight: 600;
+  color: #000;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  right: 0;
+  font-size: 60px;
+}
+
+.nav-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  color: #000;
+  margin: auto;
+}
+
+.nav-section {
+  font-size: 24px;
+  font-weight: 600;
 }
 
 .wrapper {
@@ -113,7 +147,7 @@ li .menu-link {
 
 /* testing css */
 
-.hamburger {
+/* .hamburger {
   position: fixed;
   z-index: 100;
   top: 1rem;
@@ -122,11 +156,10 @@ li .menu-link {
   border: black solid 1px;
   background: white;
   cursor: pointer;
-}
+} */
 
 .closeIcon {
-  display: none; 
-  /* visibility: hidden; */
+  display: none;
 }
 
 .menu {
@@ -147,7 +180,6 @@ li .menu-link {
 .showMenu {
   transform: translateY(0);
 }
-/* testing css */
 
 .navigation {
   margin: 0;
@@ -185,10 +217,6 @@ li .menu-link {
   line-height: 28px;
   color: black;
   font-size: 22px;
-}
-
-.desktop-menu li{
-  display: none;
 }
 
 .bold-text {
@@ -406,7 +434,8 @@ li .menu-link {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: url(./images/Mask\ Group.png), url(./images/mask\ group1.png);
+  background-image: url(./images/Mask\ Group.png),
+    url(./images/mask\ group1.png);
   background-repeat: no-repeat;
   background-position: 100% -22px, 0 93%;
 }
@@ -573,7 +602,7 @@ li .menu-link {
 }
 
 textarea {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   padding: 12px 0 0 12px;
   color: #091e42;
   width: 300px;
@@ -698,7 +727,8 @@ textarea::placeholder {
   }
 
   .about-content {
-    background-image: url(./images/mask\ desk1.png), url(./images/mask\ desk.png);
+    background-image: url(./images/mask\ desk1.png),
+      url(./images/mask\ desk.png);
     background-position: 100% -22px, 0 68%;
   }
 
@@ -715,7 +745,8 @@ textarea::placeholder {
   .contact-section {
     flex-direction: row;
     margin: 100px 0;
-    background-image: url(./images/Frame1.png), url(./images/Frame.png), url(./images/illustration\ desktop1.png);
+    background-image: url(./images/Frame1.png), url(./images/Frame.png),
+      url(./images/illustration\ desktop1.png);
     background-repeat: no-repeat;
     background-position: 100% 132px, 0 80%, 300px 75%;
     height: 66vh;

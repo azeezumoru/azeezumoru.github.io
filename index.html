@@ -6,45 +6,44 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Umoru Portfolio</title>
   <link rel="stylesheet" href="style.css">
-  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"> -->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 </head>
 <body>
   <section class="main">
     <header class="header">
       <nav class="navigation">
         <div class="menu-icon">
-          <ul class="mobile-menu">
+          <!-- <ul class="mobile-menu">
             <li class="logo"><a href="">Umoru</a></li>
-            <!-- <button class="menu-btn">
-              <img src="./images/hamburger-icon.png" 
-                alt="hamburger-icon">
-            </button>          -->
-            <button class="hamburger">
-              <i class="menuIcon material-icons">menu</i>
-              <i class="closeIcon material-icons">close</i>
-            </button>
-          </ul>
-          <ul class="desktop-menu">
+            <li class="menu-btn"><a href=""><img src="./images/hamburger-icon.png" alt="hamburger-icon"></a></li>
+          </ul> -->
+          <!-- <ul class="desktop-menu">
             <li>Portfolio</li>
             <li>About</li>
             <li>Contact</li>
-          </ul>
-          <div class="mobile-menu-container">
-            <!-- <button class="cancel-btn">
-              <img src="./images/Icon.png" alt="hamburger-icon">
-            </button> -->
-            
+          </ul> -->
+            <!-- <img src="./images/hamburger-icon.png" alt="hamburger-icon">
             <ul id="mobile-nav">
-              <li><a class="menu-link" href="#">Portfolio</a></li>
-              <li><a class="menu-link" href="#">About</a></li>
-              <li><a class="menu-link" href="#">Contact</a></li>
-            </ul>
-          </div>
-        </div>
+              <li>Portfolio</li>
+              <li>About</li>
+              <li>Contact</li>
+            </ul> -->
+              <div id="myNav" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="overlay-content">
+                  <a href="#portfolio">Portfolio</a>
+                  <a href="#about">About</a>
+                  <a href="#contact">Contact</a>
+                </div>
+              </div>
+              <div class="nav-section">
+                <a href="#home" class="active">Umoru</a>
+                <span style="font-size:30px;cursor:pointer" class="openbtn" onclick="openNav()">&#9776;</span>
+              </div>
+              
       </nav>
     </header>
-<section class="hero">
+<section class="hero" id="portfolio">
   <div class="bold-text">
       <div class="b-text-1">
           <h1>Hey there. I'm Umoru</h1>
@@ -162,7 +161,7 @@
 </section>
 
 <!-- ABOUT SECTION -->
-<section class="about-section">
+<section class="about-section" id="about">
   <div class="about-content">
     <h1 class="about-title">About me</h1>
     <p> I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.</p>
@@ -211,7 +210,7 @@
 </section>
 
 <!-- CONTACT SECTION -->
-<section class="contact-section">
+<section class="contact-section" id="contact">
   <h2 class="contact-text">I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h2>
   <div class="contact-box">
     <form action="https://formspree.io/f/xlevolgp" method="post">
