@@ -69,26 +69,85 @@ a {
 }
 
 .mobile-menu-container {
-  display: block;
-  list-style: none;
-  background-color: #ff000086;
-  text-align: right;
+  visibility: hidden;
   position: absolute;
   top: 0;
-  right: 0;
   left: 0;
-  width: 100vh;
-  visibility: hidden;
+  right: 0;
+  z-index: 1005;
+  text-align: end;
+  background-color: white;
+  border-radius: 0 0 1rem 1rem;
+}
+
+.cancel-btn {
+  border: 0;
+  display: none;
+  background-color: transparent;
+  cursor: pointer;
+  transition: background-color 150ms ease-in-out;
+}
+
+.menu-link {
+  display: none;
+  position: relative;
+  font-size: 2rem;
+  color: black;
+  width: 80%;
+  padding: 1.25rem;
+  font-weight: 600;
+  transition: color 150ms ease-in-out, background-color 150ms ease-in-out;
 }
 
 #mobile-nav {
-  display: block;
+  padding: 0.875rem 0 0;
+  list-style: none;
   text-align: left;
-}
-
-.desktop-menu li {
+  height: 70vh;
   display: none;
 }
+
+li .menu-link {
+  display: none;
+}
+
+/* testing css */
+
+.hamburger {
+  position: fixed;
+  z-index: 100;
+  top: 1rem;
+  right: 1rem;
+  padding: 4px;
+  border: black solid 1px;
+  background: white;
+  cursor: pointer;
+}
+
+.closeIcon {
+  display: none; 
+  /* visibility: hidden; */
+}
+
+.menu {
+  position: fixed;
+  transform: translateY(-100%);
+  transition: transform 0.2s;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99;
+  background: black;
+  color: white;
+  list-style: none;
+  padding-top: 4rem;
+}
+
+.showMenu {
+  transform: translateY(0);
+}
+/* testing css */
 
 .navigation {
   margin: 0;
@@ -103,15 +162,21 @@ a {
   gap: 20px;
 }
 
-.navigation .open {
+/* .navigation .open {
   animation: reappear 100ms ease-in-out 0ms 1 forwards;
 }
 .navigation .close {
   animation: disappear 100ms ease-in-out 0ms 1 forwards;
-}
+} */
 
 .menu-btn {
   margin-top: 5px;
+  border: 0;
+  padding: 0;
+  line-height: 11px;
+  background-color: inherit;
+  cursor: pointer;
+  transition: background-color 150ms ease-in-out;
 }
 
 .menu-icon .logo {
@@ -120,6 +185,10 @@ a {
   line-height: 28px;
   color: black;
   font-size: 22px;
+}
+
+.desktop-menu li{
+  display: none;
 }
 
 .bold-text {

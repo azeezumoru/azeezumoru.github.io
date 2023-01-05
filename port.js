@@ -1,19 +1,52 @@
-// const menubtn = document.querySelector('.mobile-menu');
-// const icon = menubtn.querySelector('.menu-btn');
+// const menuBtn = document.querySelector('.menu-btn');
+// const closeBtn = document.querySelector('.cancel-btn');
+// const menu = document.querySelector('.mobile-menu-container ul .menu-link');
 
-// menubtn.onclick = function(){
-//   if(icon.classList.contains('menu-btn')){
-//     icon.classList.replace('menu-btn', 'bi-x')
-//   };
-//   else {
-//     icon.classList.replace('bi-x', 'menu-btn')
-//   };
+// menuBtn.addEventListener('click', () => {
+//   menu.style.display = 'block';
+//   menuBtn.style.display = 'none';
+//   closeBtn.style.display = 'inline-block';
+// });
+
+// const mobileNavBtn = document.querySelector('.menu-btn');
+// const removeBtn = document.querySelector('.cancle-btn');
+// const mobileNav = document.querySelector('#mobile-nav');
+// const mobileNavLinks = document.querySelectorAll('.menu-link');
+
+// const navToggle = () => {
+//   mobileNav.classList.toggle('active');
+//   removeBtn.classList.toggle('hidden');
 // };
 
-const navMenu = document.querySelector('.menu-btn');
-const hamburger = document.querySelector('.menu-icon');
+// mobileNavBtn.addEventListener('click', navToggle);
+// removeBtn.addEventListener('click', navToggle);
 
-navMenu.addEventListener('click', () => {
-  navMenu.classList.toggle('active');
-  hamburger.classList.toggle('active');
-})
+// mobileNavLinks.forEach((link) => {
+//   link.addEventListener('click', navToggle);
+// });
+
+const menu = document.querySelector('#mobile-nav');
+const menuItems = document.querySelectorAll('.menu-link');
+const hamburger = document.querySelector('.hamburger');
+const closeIcon = document.querySelector('.closeIcon');
+const menuIcon = document.querySelector('.menuIcon');
+
+function toggleMenu() {
+  if (menu.classList.contains('showMenu')) {
+    menu.classList.remove('showMenu');
+    closeIcon.style.display = 'none';
+    menuIcon.style.display = 'block';
+  } else {
+    menu.classList.add('showMenu');
+    closeIcon.style.display = 'block';
+    menuIcon.style.display = 'none';
+  }
+}
+
+hamburger.addEventListener('click', toggleMenu);
+
+menuItems.forEach(
+  (menuItem) => {
+    menuItem.addEventListener('click', toggleMenu);
+  },
+);

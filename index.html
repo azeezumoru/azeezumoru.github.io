@@ -6,7 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Umoru Portfolio</title>
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"> -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
   <section class="main">
@@ -15,7 +16,14 @@
         <div class="menu-icon">
           <ul class="mobile-menu">
             <li class="logo"><a href="">Umoru</a></li>
-            <li class="menu-btn"><a href=""><img src="./images/hamburger-icon.png" alt="hamburger-icon"></a></li>
+            <!-- <button class="menu-btn">
+              <img src="./images/hamburger-icon.png" 
+                alt="hamburger-icon">
+            </button>          -->
+            <button class="hamburger">
+              <i class="menuIcon material-icons">menu</i>
+              <i class="closeIcon material-icons">close</i>
+            </button>
           </ul>
           <ul class="desktop-menu">
             <li>Portfolio</li>
@@ -23,11 +31,14 @@
             <li>Contact</li>
           </ul>
           <div class="mobile-menu-container">
-            <img src="./images/hamburger-icon.png" alt="hamburger-icon">
+            <!-- <button class="cancel-btn">
+              <img src="./images/Icon.png" alt="hamburger-icon">
+            </button> -->
+            
             <ul id="mobile-nav">
-              <li>Portfolio</li>
-              <li>About</li>
-              <li>Contact</li>
+              <li><a class="menu-link" href="#">Portfolio</a></li>
+              <li><a class="menu-link" href="#">About</a></li>
+              <li><a class="menu-link" href="#">Contact</a></li>
             </ul>
           </div>
         </div>
