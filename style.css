@@ -33,7 +33,7 @@ a {
 }
 
 .overlay-content {
-  position: relative;
+  position: fixed;
   top: 10%;
   width: 100%;
   margin-top: 30px;
@@ -59,6 +59,10 @@ a {
   right: 0;
   font-size: 60px;
 }
+
+/* .header {
+  height: 100vh;
+} */
 
 .nav-section {
   display: flex;
@@ -120,7 +124,7 @@ a {
   font-weight: 700;
   font-size: 28px;
   line-height: 44px;
-  border-bottom: 1px solid  #6f6c6b;
+  border-bottom: 1px solid #6f6c6b;
   margin-bottom: 40px;
   padding-left: 10px;
 }
@@ -197,12 +201,6 @@ li .menu-link {
 
 .showMenu {
   transform: translateY(0);
-}
-
-.navigation {
-  position: fixed;
-  margin: 0;
-  width: 100%;
 }
 
 .navigation ul {
@@ -711,7 +709,9 @@ textarea::placeholder {
 
   .desktop-nav {
     display: flex;
+    justify-content: center;
     align-items: center;
+    position: fixed;
     gap: 20px;
     height: 20vh;
     font-size: 20px;

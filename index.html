@@ -9,25 +9,9 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 </head>
 <body>
-  <section class="main">
     <header class="header">
       <nav class="navigation">
         <div class="menu-icon">
-          <!-- <ul class="mobile-menu">
-            <li class="logo"><a href="">Umoru</a></li>
-            <li class="menu-btn"><a href=""><img src="./images/hamburger-icon.png" alt="hamburger-icon"></a></li>
-          </ul> -->
-          <!-- <ul class="desktop-menu">
-            <li>Portfolio</li>
-            <li>About</li>
-            <li>Contact</li>
-          </ul> -->
-            <!-- <img src="./images/hamburger-icon.png" alt="hamburger-icon">
-            <ul id="mobile-nav">
-              <li>Portfolio</li>
-              <li>About</li>
-              <li>Contact</li>
-            </ul> -->
               <div id="myNav" class="overlay">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                 <div class="overlay-content">
@@ -36,23 +20,24 @@
                   <a href="#contact" href="javascript:void(0)" onclick="closeNav()" class="navLinks">Contact</a>
                 </div>
               </div>
-              <div class="nav-section">
+              <div class="nav-section" id="navbar">
                 <a href="#home" class="logo">Umoru</a>
                 <div class="mobile-nav">
-                  <a href="#portfolio">Portfolio</a>
-                  <a href="#about">About</a>
-                  <a href="#contact">Contact</a>
+                  <a href="#portfolio" href="javascript:void(0)">Portfolio</a>
+                  <a href="#about" href="javascript:void(0)">About</a>
+                  <a href="#contact" href="javascript:void(0)">Contact</a>
                 </div>
                 <span style="font-size:22px;cursor:pointer" class="openbtn" onclick="openNav()">&#9776;</span>
               </div>
-                <div class="desktop-nav">
+                <div class="desktop-nav" id="navbar">
                   <a href="#portfolio" class="desktop-manu">Portfolio</a>
                   <a href="#about" class="desktop-manu">About</a>
                   <a href="#contact" class="desktop-manu">Contact</a>
                 </div>   
       </nav>
     </header>
-<section class="hero" id="portfolio">
+<section class="main">
+<div class="hero" id="portfolio">
   <div class="bold-text">
       <div class="b-text-1">
           <h1>Hey there. I'm Umoru</h1>
@@ -78,7 +63,7 @@
           <a href="#"><img src="./images/chevron-down.png" alt="down icon"></a>
       </div>
   </div>
-</section>
+</div>
 </section>
 
 <!-- WORK SECTION -->
