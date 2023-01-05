@@ -27,8 +27,8 @@ a {
   z-index: 1;
   top: 0;
   right: 0;
-  background-color: rgb(0, 0, 0);
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: white;
+  background-color: rgba(250, 248, 248, 0.9);
   overflow-x: hidden;
   transition: 0.5s;
 }
@@ -74,6 +74,14 @@ a {
   font-size: 24px;
   font-weight: 600;
 }
+
+.active {
+  font-size: 18px;
+}
+
+/* .openbtn span {
+  font-size: 12px;
+} */
 
 .wrapper {
   height: 100vh;
@@ -662,6 +670,10 @@ textarea::placeholder {
     justify-content: center;
   }
 
+  .nav-section {
+    display: none;
+  }
+
   .desktop-menu {
     list-style: none;
     padding: 0;
@@ -675,6 +687,12 @@ textarea::placeholder {
     letter-spacing: 0;
     text-align: center;
     color: #344563;
+  }
+
+  .desktop-nav a {
+    display: flex;
+    align-items: center;
+    gap: 12px;
   }
 
   .contact-form-list li {

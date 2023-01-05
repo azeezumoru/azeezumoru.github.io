@@ -1,3 +1,4 @@
+// eslint-disable-next-line linebreak-style
 // const menuBtn = document.querySelector('.menu-btn');
 // const closeBtn = document.querySelector('.cancel-btn');
 // const menu = document.querySelector('.mobile-menu-container ul .menu-link');
@@ -51,10 +52,12 @@
 //   },
 // );
 
+// eslint-disable-next-line no-unused-vars
 function openNav() {
-  document.getElementById("myNav").style.width = "100%";
+  document.getElementById('myNav').style.width = '100%';
 }
 
+// eslint-disable-next-line no-unused-vars
 function closeNav() {
-  document.getElementById("myNav").style.width = "0%";
+  document.getElementById('myNav').style.width = '0%';
 }
