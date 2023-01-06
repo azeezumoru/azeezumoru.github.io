@@ -9,29 +9,41 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 </head>
 <body>
-  <section class="main">
     <header class="header">
       <nav class="navigation">
         <div class="menu-icon">
-          <ul class="mobile-menu">
-            <li class="logo"><a href="">Welcome</a></li>
-            <li class="menu-btn"><a href=""><img src="./images/hamburger-icon.png" alt="hamburger-icon"></a></li>
-          </ul>
-          <ul class="desktop-menu">
-            <li>Portfolio</li>
-            <li>About</li>
-            <li>Contact</li>
-          </ul>
-        </div>
+              <div id="myNav" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="overlay-content">
+                  <a href="#portfolio" href="javascript:void(0)" onclick="closeNav()">Portfolio</a>
+                  <a href="#about" href="javascript:void(0)" onclick="closeNav()" class="navLinks">About</a>
+                  <a href="#contact" href="javascript:void(0)" onclick="closeNav()" class="navLinks">Contact</a>
+                </div>
+              </div>
+              <div class="nav-section" id="navbar">
+                <a href="#home" class="logo">Umoru</a>
+                <div class="mobile-nav">
+                  <a href="#portfolio" href="javascript:void(0)">Portfolio</a>
+                  <a href="#about" href="javascript:void(0)">About</a>
+                  <a href="#contact" href="javascript:void(0)">Contact</a>
+                </div>
+                <span style="font-size:22px;cursor:pointer" class="openbtn" onclick="openNav()">&#9776;</span>
+              </div>
+                <div class="desktop-nav" id="navbar">
+                  <a href="#portfolio" class="desktop-manu">Portfolio</a>
+                  <a href="#about" class="desktop-manu">About</a>
+                  <a href="#contact" class="desktop-manu">Contact</a>
+                </div>   
       </nav>
     </header>
-<section class="hero">
+<section class="main">
+<div class="hero" id="portfolio">
   <div class="bold-text">
       <div class="b-text-1">
-          <h1>Hey there. I'm Umoru</h1>
+        <h1>Hey there. I'm Umoru</h1>
       </div>
       <div class="b-text-2">
-          <h1>I'm a software developer</h1>
+        <h1>I'm a software developer</h1>
       </div>
   </div>
   <div class="small-text">
@@ -48,10 +60,10 @@
   </div>
   <div class="scroll">
       <div class="scroll-circle">
-          <a href="#"><img src="./images/chevron-down.png" alt="down icon"></a>
+        <a href="#"><img src="./images/chevron-down.png" alt="down icon"></a>
       </div>
   </div>
-</section>
+</div>
 </section>
 
 <!-- WORK SECTION -->
@@ -79,10 +91,10 @@
             <div class="work-card-info">
                 <h2>Multi-Post Stories Gain+Glory</h2>
                 <ul class="work-card-pr-lang">
-                    <li>Ruby on rails</li>
-                    <li>css</li>
-                    <li>JavaScript</li>
-                    <li>html</li>
+                  <li>Ruby on rails</li>
+                  <li>css</li>
+                  <li>JavaScript</li>
+                  <li>html</li>
                 </ul>
                 <button>See Project</button>
             </div>
@@ -143,7 +155,7 @@
 </section>
 
 <!-- ABOUT SECTION -->
-<section class="about-section">
+<section class="about-section" id="about">
   <div class="about-content">
     <h1 class="about-title">About me</h1>
     <p> I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.</p>
@@ -192,7 +204,7 @@
 </section>
 
 <!-- CONTACT SECTION -->
-<section class="contact-section">
+<section class="contact-section" id="contact">
   <h2 class="contact-text">I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h2>
   <div class="contact-box">
     <form action="https://formspree.io/f/xlevolgp" method="post">
@@ -233,5 +245,6 @@
     <p class="footer-email">abdulazeezumoru@gmail.com</p>
   </div>
 </section>
+<script src="port.js"></script>
 </body>
 </html>
