@@ -60,10 +60,6 @@ a {
   font-size: 60px;
 }
 
-/* .header {
-  height: 100vh;
-} */
-
 .nav-section {
   display: flex;
   justify-content: space-between;
@@ -76,13 +72,6 @@ a {
 
 .desktop-nav {
   display: none;
-}
-
-.nav-section {
-  font-size: 24px;
-  margin: 20px;
-  gap: 30px;
-  font-weight: 600;
 }
 
 .openbtn span {
@@ -167,19 +156,6 @@ li .menu-link {
   display: none;
 }
 
-/* testing css */
-
-/* .hamburger {
-  position: fixed;
-  z-index: 100;
-  top: 1rem;
-  right: 1rem;
-  padding: 4px;
-  border: black solid 1px;
-  background: white;
-  cursor: pointer;
-} */
-
 .closeIcon {
   display: none;
 }
@@ -210,13 +186,6 @@ li .menu-link {
   display: flex;
   gap: 20px;
 }
-
-/* .navigation .open {
-  animation: reappear 100ms ease-in-out 0ms 1 forwards;
-}
-.navigation .close {
-  animation: disappear 100ms ease-in-out 0ms 1 forwards;
-} */
 
 .menu-btn {
   margin-top: 5px;
@@ -452,7 +421,8 @@ li .menu-link {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: url(./images/Mask\ Group.png),
+  background-image:
+    url(./images/Mask\ Group.png),
     url(./images/mask\ group1.png);
   background-repeat: no-repeat;
   background-position: 100% -22px, 0 93%;
@@ -768,7 +738,8 @@ textarea::placeholder {
   }
 
   .about-content {
-    background-image: url(./images/mask\ desk1.png),
+    background-image:
+      url(./images/mask\ desk1.png),
       url(./images/mask\ desk.png);
     background-position: 100% -22px, 0 68%;
   }
@@ -786,7 +757,9 @@ textarea::placeholder {
   .contact-section {
     flex-direction: row;
     margin: 100px 0;
-    background-image: url(./images/Frame1.png), url(./images/Frame.png),
+    background-image:
+      url(./images/Frame1.png),
+      url(./images/Frame.png),
       url(./images/illustration\ desktop1.png);
     background-repeat: no-repeat;
     background-position: 100% 132px, 0 80%, 300px 75%;
